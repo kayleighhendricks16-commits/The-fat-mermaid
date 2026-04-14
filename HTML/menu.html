@@ -4,7 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Our Menu | The Fat Mermaid Restaurant</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="menu.css?v=2">
+    
+    <!-- EMERGENCY BUTTON STYLES - LOAD FIRST -->
+    <style>
+        /* iPhone iOS Emergency Blue Button Styles - NUCLEAR RESET */
+        button#book-now-btn-menu {
+            -webkit-appearance: none !important;
+            appearance: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+            min-height: 52px !important;
+            height: 52px !important;
+            padding: 14px 16px !important;
+            box-sizing: border-box !important;
+        }
+        
+        @media (max-width: 768px) {
+            button#book-now-btn-menu {
+                background: #0e2a43 !important;
+                background-color: #0e2a43 !important;
+                background-image: none !important;
+                color: #ffffff !important;
+                border: 2px solid #0e2a43 !important;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+            }
+        }
+        
+        @supports (-webkit-touch-callout: none) {
+            button#book-now-btn-menu {
+                background: #0e2a43 !important;
+                background-color: #0e2a43 !important;
+                color: #ffffff !important;
+                border: 2px solid #0e2a43 !important;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -138,7 +175,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+                                <button type="submit" id="book-now-btn-menu" class="btn btn-primary btn-block" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; min-height: 52px !important; height: 52px !important; padding: 14px 16px !important; box-sizing: border-box !important;">Book Now</button>
                             </div>
                         </div>
                     </form>
@@ -233,6 +270,26 @@
                 navMenu.classList.remove('active');
             });
         });
+        
+        // FORCE BUTTON BLUE ON MOBILE
+        function forceButtonBlue() {
+            const btn = document.getElementById('book-now-btn-menu');
+            if (btn) {
+                btn.className = '';
+                btn.style.cssText = 'background: #0e2a43 !important; background-color: #0e2a43 !important; background-image: none !important; color: #ffffff !important; border: 2px solid #0e2a43 !important; display: block !important; width: 100% !important; min-height: 52px !important; height: 52px !important; border-radius: 12px !important; font-family: Montserrat, sans-serif !important; font-size: 16px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 1px !important; text-align: center !important; padding: 14px 16px !important; margin-top: 16px !important; -webkit-appearance: none !important; appearance: none !important; box-sizing: border-box !important;';
+                btn.style.webkitAppearance = 'none';
+            }
+        }
+        forceButtonBlue();
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', forceButtonBlue);
+        }
+        [0, 100, 300, 500, 1000, 2000, 3000, 5000].forEach(delay => {
+            setTimeout(forceButtonBlue, delay);
+        });
+        window.addEventListener('load', forceButtonBlue);
+        window.addEventListener('scroll', forceButtonBlue, { passive: true });
+        document.addEventListener('touchstart', forceButtonBlue, { passive: true });
     </script>
 </body>
 </html>
