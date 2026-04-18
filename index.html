@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0e2a43">
+    <title>The Fat Mermaid · Mediterranean Hideaway in Bedfordview</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS/index.css?v=12">
+    
+    <!-- EMERGENCY BUTTON STYLES - LOAD FIRST -->
+    <style>
+        /* iPhone iOS Emergency Blue Button Styles - NUCLEAR RESET */
+        
+        /* Reset all button defaults first */
+        button#send-request-btn {
+            -webkit-appearance: none !important;
+            appearance: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+            min-height: 52px !important;
+            height: 52px !important;
+            padding: 14px 16px !important;
+            box-sizing: border-box !important;
+        }
+        
+        @media (max-width: 768px) {
+            /* Super specific selector chain */
+            html body section.contact div.container div.contact-grid div.booking-form form div.form-row button#send-request-btn {
+                background: #0e2a43 !important;
+                background-color: #0e2a43 !important;
+                background-image: none !important;
+                color: #ffffff !important;
+                border: 2px solid #0e2a43 !important;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+            }
+        }
+        
+        /* iOS Safari specific - REAL IPHONE TARGETING */
+        @supports (-webkit-touch-callout: none) {
+            button#send-request-btn {
+                background: #0e2a43 !important;
+                background-color: #0e2a43 !important;
+                color: #ffffff !important;
+                border: 2px solid #0e2a43 !important;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+            }
+        }
+        
+        /* iPhone specific pixel ratio targeting */
+        @media (-webkit-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 3) {
+            @media (max-width: 768px) {
+                button#send-request-btn {
+                    background: #0e2a43 !important;
+                    background-color: #0e2a43 !important;
+                    color: #ffffff !important;
+                    border: 2px solid #0e2a43 !important;
+                    -webkit-appearance: none !important;
+                    appearance: none !important;
+                    background-image: none !important;
+                }
+            }
+        }
+    </style>
+    
+    <!-- Icons and fonts (kept in HTML because they are external resources) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (fixed, deep blue background) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-wrapper">
+                        <div class="logo-image">
+                            <!-- Replace with your own logo later -->
+                            <img src="images/mermaidlogo.avif" alt="The Fat Mermaid Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text-container">
+                            <span class="logo-main brand-name">THE FAT MERMAID</span>
+                            <span class="logo-sub">Your Escape From Reality</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="HTML/restaurant.html" class="nav-link">Restaurant</a></li>
+                        <li class="nav-item"><a href="HTML/events.html" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="HTML/little_mykonos.html" class="nav-link">Little Mykonos</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <!-- Reserve button (primary-light with primary-dark text) -->
+                        <li class="nav-item"><a href="#contact" class="nav-link book-btn">Book</a></li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-slide active" style="background-image: url('images/hero1.png');"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title hero-title-brand">THE FAT MERMAID</h1>
+                <p class="hero-tagline">YOUR ESCAPE FROM REALITY</p>
+                <p class="hero-open">NOW OPEN</p>
+                <p class="hero-location">BEDFORDVIEW</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">Book Now</a>
+                    <a href="HTML/restaurant.html#menu" class="btn btn-outline" style="background-color: transparent !important; color: #fff !important; border: 2px solid rgba(255,255,255,0.9) !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">See Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section – hidden gem, pool, food -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">THE FAT MERMAID</div>
+                <h2 class="section-title">Welcome to <span class="brand-name">The Fat Mermaid</span></h2>
+                <p class="section-subtitle">Simple, beautiful, and unmistakably Greek-inspired</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image-main">
+                        <div class="about-image">
+                            <img src="images/pool1.jpg" alt="Poolside at The Fat Mermaid" class="about-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Where Joburg slows down</h3>
+                    <p><span class="brand-name">The Fat Mermaid</span> brings together whitewashed textures, deep Aegean blues, and warm hospitality - creating a relaxed coastal restaurant experience in Bedfordview.</p>
+                    
+                    <div class="highlight-box">
+                        <p>"Beautiful setting, generous food, and genuinely warm service - every visit feels like a mini island holiday."</p>
+                        <div class="highlight-author">– Regular guest</div>
+                    </div>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-details">
+                                <h4><i class="fas fa-swimmer" style="color: var(--primary-dark); margin-right: 8px;"></i>Poolside Days</h4>
+                                <p>Sun, water, music, and cocktails in a calm Mediterranean setting.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-details">
+                                <h4><i class="fas fa-utensils" style="color: var(--primary-dark); margin-right: 8px;"></i>The Fat Mermaid Restaurant</h4>
+                                <p>Fresh Mediterranean plates, signature grills, and bold, bright flavor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-details">
+                                <h4><i class="fas fa-hotel" style="color: var(--primary-dark); margin-right: 8px;"></i>Little Mykonos</h4>
+                                <p>Whitewashed suites with private balconies for an easy overnight escape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards / Experiences -->
+    <section id="mykonos" class="menu-preview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">EXPERIENCES</div>
+                <h2 class="section-title">Your Mediterranean Escape</h2>
+                <p class="section-subtitle">Eat well, swim slowly, stay longer</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Card 1: Restaurant -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/pizza.jpg" alt="The Fat Mermaid restaurant dishes" class="menu-img">
+                        <div class="menu-badge">EAT</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3><span class="brand-name">The Fat Mermaid</span></h3>
+                        </div>
+                        <p>Modern Mediterranean dining with fresh ingredients and laid-back island energy.</p>
+                        <div class="menu-tags">
+                            <span class="tag">Mediterranean</span>
+                            <span class="tag">Seafood</span>
+                            <span class="tag">Grill</span>
+                        </div>
+                        <a href="HTML/restaurant.html#menu" class="card-link">View menu →</a>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Pool & Parties -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/pool.jpg" alt="Pool at The Fat Mermaid" class="menu-img">
+                        <div class="menu-badge">SWIM</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Poolside</h3>
+                        </div>
+                        <p>Lounge in the sun, sip signature cocktails, and settle into a slower rhythm.</p>
+                        <div class="menu-tags">
+                            <span class="tag">Day club</span>
+                            <span class="tag">Cocktails</span>
+                            <span class="tag">Live music</span>
+                        </div>
+                        <a href="#contact" class="card-link">Reserve poolside →</a>
+                    </div>
+                </div>
+                
+                <!-- Card 3: The Mykonos Hotel -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/hotel.jpg" alt="The Mykonos suites" class="menu-img">
+                        <div class="menu-badge">STAY</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Little Mykonos</h3>
+                        </div>
+                        <p>Boutique suites with private balconies and calm pool views, inspired by the Cyclades.</p>
+                        <div class="menu-tags">
+                            <span class="tag">Luxury</span>
+                            <span class="tag">Breakfast incl.</span>
+                            <span class="tag">Pool view</span>
+                        </div>
+                        <a href="HTML/little_mykonos.html" class="card-link">Check stays →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section – now with Booking Form instead of Contact Info -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">FIND US</div>
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">A quiet corner of Bedfordview with a Greek island spirit</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Booking Form (replaces old contact info) -->
+                <div class="booking-form">
+                    <h3>Reserve a Table</h3>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-row form-row-half">
+                            <label class="form-label">Date *</label>
+                            <input type="date" name="date" required style="min-height: 52px !important; height: 52px !important; padding: 14px 16px !important; box-sizing: border-box !important;">
+                        </div>
+                        <div class="form-row form-row-half">
+                            <label class="form-label">Time *</label>
+                            <input type="time" name="time" required style="min-height: 52px !important; height: 52px !important; padding: 14px 16px !important; box-sizing: border-box !important;">
+                        </div>
+                        <div class="form-row">
+                            <select name="guests" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" placeholder="Special requests or notes" rows="4"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" id="send-request-btn" class="btn btn-primary btn-block" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; min-height: 52px !important; height: 52px !important; padding: 14px 16px !important; box-sizing: border-box !important;">Send Request</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Google Map -->
+                <div class="contact-map">
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=The%20Fat%20Mermaid%20Bedfordview&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Slider -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pool5.jpg');"></div>
+            <div class="cta-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pool4.jpg');"></div>
+        </div>
+        <div class="container">
+            <h2 class="cta-title">Ready for the Escape?</h2>
+            <p class="cta-text">Join us at <span class="brand-name">The Fat Mermaid</span> for Mediterranean dining, poolside afternoons, and Mykonos-inspired stays.</p>
+            <div class="cta-buttons">
+                <a href="HTML/restaurant.html#menu" class="btn btn-primary" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">View Menu</a>
+                <a href="#contact" class="btn btn-outline" style="background-color: transparent !important; color: #fff !important; border: 2px solid rgba(255,255,255,0.9) !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">Book Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-wrapper">
+                            <div class="logo-image">
+                                <img src="images/mermaidlogo.avif" alt="The Fat Mermaid Logo" class="logo-img">
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-main brand-name">THE FAT MERMAID</span>
+                                <span class="logo-sub">Your Escape From Reality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        A Greek-inspired restaurant and retreat in Bedfordview - Mediterranean plates, poolside ease, and elegant stays.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="HTML/restaurant.html">Restaurant</a></li>
+                        <li><a href="HTML/little_mykonos.html">Little Mykonos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Tuesday</span><span>08:00 - 17:00</span></li>
+                        <li><span>Wednesday</span><span>08:00 - 21:00</span></li>
+                        <li><span>Thursday - Saturday</span><span>08:00 - 22:00</span></li>
+                        <li><span>Sunday</span><span>08:00 - 18:00</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> 4 Jasmine, Bedfordview, Johannesburg</div>
+                        <div class="contact-item"><i class="fas fa-phone"></i> 010 023 3990</div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i> thefatmermaid@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Fat Mermaid. All rights reserved.</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp button (fixed bottom right) -->
+    <a href="https://wa.me/27836087774" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for sliders and mobile menu -->
+    <script>
+        // Hero Slider
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        let heroCurrent = 0;
+        if (heroSlides.length > 1) {
+            setInterval(() => {
+                heroSlides.forEach(slide => slide.classList.remove('active'));
+                heroCurrent = (heroCurrent + 1) % heroSlides.length;
+                heroSlides[heroCurrent].classList.add('active');
+            }, 5000);
+        }
+
+        // CTA Slider
+        const ctaSlides = document.querySelectorAll('.cta-slide');
+        let ctaCurrent = 0;
+        if (ctaSlides.length > 1) {
+            setInterval(() => {
+                ctaSlides.forEach(slide => slide.classList.remove('active'));
+                ctaCurrent = (ctaCurrent + 1) % ctaSlides.length;
+                ctaSlides[ctaCurrent].classList.add('active');
+            }, 5000);
+        }
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Premium scroll reveal
+        const revealTargets = document.querySelectorAll(
+            '.section-header, .about-image-main, .about-text, .info-card, .menu-item, .booking-form, .contact-map, .cta-title, .cta-text, .cta-buttons, .footer-col'
+        );
+
+        revealTargets.forEach((el, index) => {
+            el.classList.add('reveal');
+            if (el.classList.contains('info-card') || el.classList.contains('menu-item') || el.classList.contains('footer-col')) {
+                el.classList.add(`reveal-delay-${(index % 3) + 1}`);
+            }
+        });
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+
+        revealTargets.forEach((el) => revealObserver.observe(el));
+        
+        // FORCE BUTTON BLUE ON MOBILE - NUCLEAR OPTION FOR REAL iOS
+        function forceButtonBlue() {
+            const btn = document.getElementById('send-request-btn');
+            if (btn) {
+                // Remove all classes that might interfere
+                btn.className = '';
+                // Force inline styles with ALL properties iOS might override - SAME SIZE AS INPUTS
+                btn.style.cssText = 'background: #0e2a43 !important; background-color: #0e2a43 !important; background-image: none !important; color: #ffffff !important; border: 2px solid #0e2a43 !important; display: block !important; width: 100% !important; min-height: 52px !important; height: 52px !important; border-radius: 12px !important; font-family: Montserrat, sans-serif !important; font-size: 16px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 1px !important; text-align: center !important; padding: 14px 16px !important; margin-top: 16px !important; -webkit-appearance: none !important; appearance: none !important; box-sizing: border-box !important;';
+                
+                // iOS Safari fix - force re-render
+                btn.style.webkitAppearance = 'none';
+                btn.setAttribute('style', btn.getAttribute('style') + '; background: #0e2a43 !important;');
+            }
+        }
+        
+        // Run immediately
+        forceButtonBlue();
+        
+        // Run on DOM ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', forceButtonBlue);
+        }
+        
+        // Run multiple times to beat any other scripts and iOS defaults
+        [0, 100, 300, 500, 1000, 2000, 3000, 5000].forEach(delay => {
+            setTimeout(forceButtonBlue, delay);
+        });
+        
+        // Run when page is fully loaded
+        window.addEventListener('load', forceButtonBlue);
+        
+        // Run on scroll (when user might see the button)
+        window.addEventListener('scroll', forceButtonBlue, { passive: true });
+        
+        // Run on touch (when user interacts)
+        document.addEventListener('touchstart', forceButtonBlue, { passive: true });
+    </script>
+</body>
+</html>
