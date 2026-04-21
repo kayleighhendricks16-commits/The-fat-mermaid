@@ -2665,15 +2665,18 @@ min-height: 350px;
 }
 
 .hero-buttons .btn {
+    -webkit-animation: floatUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation: floatUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     opacity: 0;
 }
 
 .hero-buttons .btn:nth-child(1) {
+    -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
 
 .hero-buttons .btn:nth-child(2) {
+    -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
 
@@ -2685,14 +2688,17 @@ min-height: 350px;
 
 /* Page hero buttons animation */
 .page-hero .hero-buttons .btn {
+    -webkit-animation: floatUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation: floatUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     opacity: 0;
 }
 
 .page-hero .hero-buttons .btn:nth-child(1) {
+    -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
 
 .page-hero .hero-buttons .btn:nth-child(2) {
+    -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
