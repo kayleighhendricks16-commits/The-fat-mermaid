@@ -491,7 +491,7 @@ ul { list-style: none; }
     padding: 96px 0;
     background: #fffdf8;
     border-top: 1px solid rgba(42, 109, 150, 0.22);
-    border-bottom: 1px solid rgba(42, 109, 150, 0.22);
+    border-bottom: 2px solid #0e2a43;
 }
 .section-header {
     text-align: center;
@@ -721,6 +721,7 @@ ul { list-style: none; }
     background-color: var(--sand);
     padding: 80px 0;
     text-align: center;
+    border-bottom: 2px solid #0e2a43;
 }
 .testimonial-content {
     max-width: 800px;
@@ -750,8 +751,8 @@ ul { list-style: none; }
 .contact {
     padding: 96px 0;
     background-color: #fffdf8;
-    border-top: 1px solid rgba(42, 109, 150, 0.22);
-    border-bottom: 1px solid rgba(42, 109, 150, 0.22);
+    border-top: 2px solid #0e2a43;
+    border-bottom: 2px solid #0e2a43;
 }
 .contact-grid {
     display: grid;
@@ -1394,6 +1395,7 @@ ul { list-style: none; }
 .events-section {
     padding: 96px 0;
     background-color: #fffdf8;
+    border-bottom: 2px solid #0e2a43;
 }
 
 .events-grid {
