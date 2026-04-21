@@ -85,7 +85,7 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-dark), #19466b);
+    background: linear-gradient(135deg, var(--primary-dark), #23a1a6);
     color: var(--white);
     box-shadow: var(--shadow);
 }
@@ -1016,7 +1016,7 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     /* Alternating background: BLUE section (image sits above this) */
-    background: linear-gradient(180deg, #0f2c45, #153b59);
+    background: linear-gradient(180deg, rgba(15, 44, 69, 0.6), rgba(21, 59, 89, 0.5));
     border-top: 1px solid rgba(255, 255, 255, 0.18);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -1024,7 +1024,7 @@ ul { list-style: none; }
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 50% 20%, rgba(210, 176, 118, 0.18), transparent 55%);
+    background: rgba(15, 44, 69, 0.4);
     pointer-events: none;
     z-index: 1;
 }
@@ -1618,9 +1618,69 @@ ul { list-style: none; }
 }
 
 /* ===== LITTLE MYKONOS PAGE STYLES ===== */
+.about-section {
+    padding: 96px 0;
+    background-color: #fffdf8;
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.intro-section {
+    padding: 96px 0;
+    background-color: var(--surface);
+    border-bottom: 2px solid var(--primary-dark);
+}
+
 .rates-section {
     padding: 96px 0;
     background-color: var(--surface);
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.amenities-section {
+    padding: 96px 0;
+    background-color: #fffdf8;
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.spa-section {
+    padding: 96px 0;
+    background-color: var(--surface);
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.gallery-section {
+    padding: 96px 0;
+    background-color: var(--surface);
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.photoshoot-section {
+    padding: 96px 0;
+    background-color: #fffdf8;
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+/* Increased spacing for Little Mykonos section headers */
+.about-section .section-header,
+.intro-section .section-header,
+.rates-section .section-header,
+.amenities-section .section-header,
+.spa-section .section-header,
+.gallery-section .section-header,
+.photoshoot-section .section-header,
+.contact-stay-section .section-header {
+    margin-bottom: 80px;
+}
+
+.about-section .section-title,
+.intro-section .section-title,
+.rates-section .section-title,
+.amenities-section .section-title,
+.spa-section .section-title,
+.gallery-section .section-title,
+.photoshoot-section .section-title,
+.contact-stay-section .section-title {
+    margin-bottom: 1.5rem;
 }
 
 .rates-grid {
@@ -1688,11 +1748,6 @@ ul { list-style: none; }
     margin-top: 2rem;
 }
 
-.amenities-section {
-    padding: 96px 0;
-    background-color: #fffdf8;
-}
-
 .amenities-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1722,11 +1777,6 @@ ul { list-style: none; }
     text-align: center;
     color: rgba(0,0,0,0.7);
     margin-top: 2rem;
-}
-
-.spa-section {
-    padding: 96px 0;
-    background-color: var(--surface);
 }
 
 .spa-grid {
@@ -1771,11 +1821,6 @@ color: rgba(0,0,0,0.7);
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.photoshoot-section {
-    padding: 96px 0;
-    background-color: #fffdf8;
 }
 
 .photoshoot-grid {
@@ -1856,6 +1901,8 @@ color: rgba(0,0,0,0.7);
 
 @media (max-width: 576px) {
     .amenities-grid { grid-template-columns: 1fr; }
+    .about-section,
+    .intro-section,
     .rates-section,
     .amenities-section,
     .spa-section,
@@ -1863,6 +1910,18 @@ color: rgba(0,0,0,0.7);
     .contact-stay-section { padding: 72px 0; }
     .contact-stay-left,
     .contact-stay-right { padding: 1.5rem; }
+    
+    /* Reduce section header margin on mobile */
+    .about-section .section-header,
+    .intro-section .section-header,
+    .rates-section .section-header,
+    .amenities-section .section-header,
+    .spa-section .section-header,
+    .gallery-section .section-header,
+    .photoshoot-section .section-header,
+    .contact-stay-section .section-header {
+        margin-bottom: 50px;
+    }
 }
 
 /* ===== LITTLE MYKONOS IMAGE ALIGNMENT ===== */
@@ -1889,15 +1948,6 @@ color: rgba(0,0,0,0.7);
 .contact-stay-section .stay-image img,
 .rates-section .card-image img {
     width: 100%;
-}
-
-.gallery-section {
-padding: 96px 0;
-background-color: var(--surface);
-}
-
-.gallery-section .section-header {
-margin-bottom: 50px;
 }
 
 .gallery-grid {

@@ -123,7 +123,7 @@
                 <p class="hero-location">BEDFORDVIEW</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">Book Now</a>
-                    <a href="HTML/restaurant.html#menu" class="btn btn-outline" style="background-color: transparent !important; color: #fff !important; border: 2px solid rgba(255,255,255,0.9) !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">See Our Menu</a>
+                    <a href="HTML/restaurant.html#menu" class="btn btn-outline" style="background-color: transparent !important; color: #fff !important; border: 2px solid rgba(255,255,255,0.9) !important; padding: 13px 26px !important; border-radius: 14px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; font-family: 'Montserrat', sans-serif !important; font-size: 0.9rem !important;">Our Menu</a>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
                 <div class="about-image-container">
                     <div class="about-image-main">
                         <div class="about-image">
-                            <img src="images/pool1.jpg" alt="Poolside at The Fat Mermaid" class="about-img">
+                            <img src="images/aboutpool.jpeg" alt="Poolside at The Fat Mermaid" class="about-img">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                         <div class="info-card">
                             <div class="info-details">
                                 <h4><i class="fas fa-utensils" style="color: var(--primary-dark); margin-right: 8px;"></i>The Fat Mermaid Restaurant</h4>
-                                <p>Fresh Mediterranean plates, signature grills, and bold, bright flavor.</p>
+                                <p>Inspired by authentic Mediterranean passion for flavour, served with a modern twist.</p>
                             </div>
                         </div>
                         
@@ -197,14 +197,14 @@
                 <!-- Card 1: Restaurant -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/Chicken Shawarma.jpg" alt="The Fat Mermaid restaurant dishes" class="menu-img">
+                        <img src="images/food6.jpg" alt="The Fat Mermaid restaurant dishes" class="menu-img">
                         <div class="menu-badge">EAT</div>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
                             <h3><span class="brand-name">The Fat Mermaid</span></h3>
                         </div>
-                        <p>Modern Mediterranean dining with fresh ingredients and laid-back island energy.</p>
+                        <p>Indulge in vibrant modern Mediterranean cuisine at The Fat Mermaid, where fresh, high-quality ingredients meet a relaxed island vibe. Perfect for a leisurely meal with friends or family, featuring bold flavors from land and sea, grilled to perfection in a welcoming, laid-back atmosphere.</p>
                         <div class="menu-tags">
                             <span class="tag">Mediterranean</span>
                             <span class="tag">Seafood</span>
@@ -217,14 +217,14 @@
                 <!-- Card 2: Pool & Parties -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/pool.jpg" alt="Pool at The Fat Mermaid" class="menu-img">
+                        <img src="images/poolside.jpg" alt="Pool at The Fat Mermaid" class="menu-img">
                         <div class="menu-badge">SWIM</div>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
                             <h3>Poolside</h3>
                         </div>
-                        <p>Lounge in the sun, sip signature cocktails, and settle into a slower rhythm.</p>
+                        <p>Unwind by the sparkling pool, soak up the warm sun on a comfortable lounger, and enjoy refreshing signature cocktails while the gentle island rhythm takes over. It's the perfect spot to laugh with friends, float lazily, or simply let the day drift by in pure relaxation.</p>
                         <div class="menu-tags">
                             <span class="tag">Day club</span>
                             <span class="tag">Cocktails</span>
@@ -244,7 +244,7 @@
                         <div class="menu-item-header">
                             <h3>Little Mykonos</h3>
                         </div>
-                        <p>Boutique suites with private balconies and calm pool views, inspired by the Cyclades.</p>
+                        <p>Escape to Little Mykonos, where whitewashed elegance meets island serenity. Our boutique suites feature private balconies with sweeping pool views and luxurious Cycladic interiors. Wake to gourmet breakfast, soak up the sun by the water, and let the tranquil rhythm restore your spirit.</p>
                         <div class="menu-tags">
                             <span class="tag">Luxury</span>
                             <span class="tag">Breakfast incl.</span>
@@ -270,7 +270,8 @@
                 <!-- Booking Form (replaces old contact info) -->
                 <div class="booking-form">
                     <h3>Reserve a Table</h3>
-                    <form action="#" method="post">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e87deb18-46b2-42c3-ab8d-fb271e9d5f82">
                         <div class="form-row">
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
@@ -318,8 +319,8 @@
     <!-- CTA Section with Background Slider -->
     <section class="cta-section">
         <div class="cta-bg">
-            <div class="cta-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pool5.jpg');"></div>
-            <div class="cta-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pool4.jpg');"></div>
+            <div class="cta-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/pool5.jpg');"></div>
+            <div class="cta-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/pool4.jpg');"></div>
         </div>
         <div class="container">
             <h2 class="cta-title">Ready for the Escape?</h2>
@@ -383,7 +384,7 @@
                     <div class="contact-info">
                         <div class="contact-item"><i class="fas fa-map-marker-alt"></i> 4 Jasmine, Bedfordview, Johannesburg</div>
                         <div class="contact-item"><i class="fas fa-phone"></i> 010 023 3990</div>
-                        <div class="contact-item"><i class="fas fa-envelope"></i> thefatmermaid@gmail.com</div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i> bookings@thefatmermaid.online</div>
                     </div>
                 </div>
             </div>
