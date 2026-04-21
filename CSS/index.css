@@ -1044,20 +1044,30 @@ ul { list-style: none; }
     transition: opacity 1s ease-in-out;
 }
 .cta-slide.active { opacity: 1; }
-.cta-section .container { position: relative; z-index: 2; }
+.cta-section .container {
+    position: relative;
+    z-index: 2;
+    background: rgba(14, 42, 67, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    max-width: 800px;
+}
 .cta-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--white);
-    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 .cta-text {
     font-size: 1.2rem;
     margin-bottom: 2.8rem;
-    color: rgba(255,255,255,0.88);
+    color: rgba(255,255,255,0.95);
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 .cta-buttons {
     display: flex;
