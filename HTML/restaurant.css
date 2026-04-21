@@ -1202,6 +1202,37 @@ ul { list-style: none; }
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes floatUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero buttons float up animation */
+.hero-buttons .btn {
+    animation: floatUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+}
+
+.hero-buttons .btn:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.hero-buttons .btn:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+/* Hover lift effect for hero buttons */
+.hero-buttons .btn:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(14, 42, 67, 0.25);
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(28px);
