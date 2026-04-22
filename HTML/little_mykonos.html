@@ -62,9 +62,15 @@
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                 "opens": "08:00",
-                "closes": "22:00"
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "08:00",
+                "closes": "17:00"
             }
         ],
         "amenityFeature": [
@@ -411,7 +417,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="submit" id="book-now-btn" class="btn btn-primary btn-block" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; min-height: 52px !important; height: 52px !important; padding: 14px 16px !important; box-sizing: border-box !important;">Book now</button>
+                            <button type="submit" id="book-now-btn" class="btn btn-primary btn-block" style="background: linear-gradient(135deg, #0e2a43 0%, #19466b 100%) !important; color: #fff !important; border: none !important; min-height: 52px !important; height: 52px !important; border-radius: 12px !important; font-family: Montserrat, sans-serif !important; font-size: 16px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 1px !important; text-align: center !important; padding: 14px 16px !important; margin-top: 16px !important; -webkit-appearance: none !important; appearance: none !important; box-sizing: border-box !important;">Book now</button>
                         </div>
                     </form>
                 </div>
@@ -471,10 +477,8 @@
                 <div class="footer-col">
                     <h3 class="footer-title">Hours</h3>
                     <ul class="footer-hours">
-                        <li><span>Monday - Tuesday</span><span>08:00 - 17:00</span></li>
-                        <li><span>Wednesday</span><span>08:00 - 21:00</span></li>
-                        <li><span>Thursday - Saturday</span><span>08:00 - 22:00</span></li>
-                        <li><span>Sunday</span><span>08:00 - 18:00</span></li>
+                        <li><span>Monday - Saturday</span><span>08:00 - 20:00</span></li>
+                        <li><span>Sunday</span><span>08:00 - 17:00</span></li>
                     </ul>
                 </div>
                 
