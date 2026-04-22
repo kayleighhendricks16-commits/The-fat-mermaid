@@ -1231,6 +1231,7 @@ ul {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+    align-items: stretch;
 }
 
 /* Form groups - flex children */
@@ -1238,6 +1239,14 @@ ul {
 .form-group {
     flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.booking-form .form-group.with-label,
+.form-group.with-label {
+    justify-content: flex-start;
 }
 
 .booking-form .form-group.full-width,

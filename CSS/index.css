@@ -2092,6 +2092,7 @@ min-height: 350px;
     display: flex;
     gap: 1rem;
     margin-bottom: 1.2rem;
+    align-items: stretch;
 }
 
 /* Form groups - flex children */
@@ -2099,6 +2100,17 @@ min-height: 350px;
 .form-group {
     flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Form groups with labels align to top */
+.booking-form .form-group.with-label,
+.form-group.with-label,
+.booking-form .form-group:has(.form-label),
+.form-group:has(.form-label) {
+    justify-content: flex-start;
 }
 
 .booking-form .form-group.full-width,
